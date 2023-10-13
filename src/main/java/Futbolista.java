@@ -22,11 +22,34 @@ public abstract class Futbolista implements Comparable<Futbolista> {
         return this.nombre.equals(f.nombre) && this.edad == f.edad && this.posicion.equals(f.posicion);
 
     }
-    
-    public int compareTo(Futbolista o) {
-        return 0;
 
+    public int compareTo() {
+        return 0;
     }
 
-    public abstract void jugarConLasManos();
+
+    public abstract boolean jugarConLasManos();
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getPosicion() {
+        return posicion;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+
 }
+
